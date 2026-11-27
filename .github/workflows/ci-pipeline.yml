@@ -36,7 +36,7 @@ jobs:
     # Stage 4: Packaging & Artifact Generation
       - name: Package Application
         run: zip -r app-build-${{ github.sha }}.zip calculator.py
-test_calculator.py
+         test_calculator.py
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
